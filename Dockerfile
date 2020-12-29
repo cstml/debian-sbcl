@@ -2,7 +2,9 @@ FROM debian:latest as builder
 RUN apt update  -y &&\
     apt upgrade -y &&\ 
     apt install -y curl\
-                   tmux
+                   tmux\
+                   vim\
+                   git
 
 # install sbcl
 RUN apt install -y sbcl
