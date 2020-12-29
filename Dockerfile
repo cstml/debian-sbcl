@@ -16,3 +16,6 @@ RUN sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
 
 # Copy the config
 COPY config/ root/ 
+
+# Set the workdir
+WORKDIR root/.quicklisp/local-projects
